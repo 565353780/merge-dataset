@@ -35,23 +35,4 @@ void Example::run_example()
                        target_image_height);
 
     merge_dataset.merge_dataset();
-
-    MergeDataset merge_dataset1;
-
-    source_dataset_path = "/home/chli/chLi/Download/DeepLearning/Dataset/WaterDrop/20210412-hospital-cap/2021-04-12/MaskSpace/Yolov3Component/train_dataset_drop";
-    target_dataset_path = source_dataset_path + "_merge";
-    max_dataset_num = 20000;
-
-    merge_dataset1.init(source_dataset_path,
-                       target_dataset_path,
-                       merge_image_num,
-                       row_image_num,
-                       col_image_num,
-                       row_first,
-                       max_dataset_num,
-                       target_image_width,
-                       target_image_height);
-
-    merge_dataset1.merge_dataset();
-
 }
